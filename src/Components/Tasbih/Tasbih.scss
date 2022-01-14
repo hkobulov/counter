@@ -1,0 +1,77 @@
+.tasbih {
+    margin: 0 auto;
+}
+
+
+.tasbih__display {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 26px;
+    text-align: right;
+    border-radius: 8px;
+    color: #800000;
+}
+
+.tasbih__all-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasbih__btns-list {
+    display: flex;
+    margin: -15px;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tasbih__btns-item {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.tasbih__btns-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+    &:active {
+        box-shadow: rgb(184, 37, 0) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+}
+
+
+.tasbih__all-btn {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+    &:active {
+        box-shadow: rgb(184, 37, 0) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+}
+
+.author-link {
+    color: #800000;
+    text-decoration: none;
+    font-size: 20px;
+}
