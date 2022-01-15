@@ -2,7 +2,7 @@ import React from "react";
 import './Tasbih.scss';
 import langData from '../../Localization/data';
 
-function Tasbih({count, setCount, disabled, setDisabled, value, setValue, lang, theme, setTheme}) {
+function Tasbih({count, setCount, disabled, setDisabled, value, setValue, lang, theme, setTheme, block, setBlock}) {
     
     return (
         <>
@@ -46,7 +46,9 @@ function Tasbih({count, setCount, disabled, setDisabled, value, setValue, lang, 
     
     <li className={`tasbih__btns-item ${theme ? 'tasbih__btns-item--dark' : null}`}>
     {langData[lang].tasbihBtns.lock}
-    <button className={`tasbih__btns-btn ${theme ? 'tasbih__btns-btn--dark' : null}`} onClick={(evt) => setDisabled(!disabled)}>
+    <button className={`tasbih__btns-btn ${theme ? 'tasbih__btns-btn--dark' : null} ${block ? 'tasbih__btns-btn--active' : null}`} onClick={() => {
+        setDisabled(!disabled); setBlock(!block)
+    }}>
     
     </button>
     </li>
@@ -54,7 +56,6 @@ function Tasbih({count, setCount, disabled, setDisabled, value, setValue, lang, 
     <li className={`tasbih__btns-item ${theme ? 'tasbih__btns-item--dark' : null}`}>
     {langData[lang].tasbihBtns.theme}
     <button className={`tasbih__btns-btn ${theme ? 'tasbih__btns-btn--dark' : null}`} onClick={() => setTheme(!theme)}>
-    
     </button>
     </li>
     
@@ -69,9 +70,9 @@ function Tasbih({count, setCount, disabled, setDisabled, value, setValue, lang, 
     <button  className={`tasbih__all-btn ${theme ? 'tasbih__all-btn--dark' : null}`} onClick={() => setCount(count + 1)} disabled={disabled}>
     {langData[lang].tasbihBtns.count}
     </button>
-
+    
     <a className="author-link" href="https://t.me/h_kobulov">
-        Hikmatulloh ibn Hamidulloh
+    Hikmatulloh ibn Hamidulloh
     </a>
     </div>
     </div>

@@ -11,6 +11,7 @@ function App() {
   const [value, setValue] = React.useState(0)
   const [modal, setModal] = React.useState(false)
   const [theme, setTheme] = React.useState(false)
+  const [block, setBlock] = React.useState(false)
 
   function data() {
     let data = new Date();
@@ -64,7 +65,7 @@ function App() {
     </button>
     <Zikr modal={modal} setModal={setModal} lang={lang} setLang={setLang} theme={theme} setTheme={setTheme}/>
     
-    <Tasbih count={count} setCount={setCount} disabled={disabled} setDisabled={setDisabled} value={value} setValue={setValue} lang={lang} theme={theme} setTheme={setTheme}/>
+    <Tasbih count={count} setCount={setCount} disabled={disabled} setDisabled={setDisabled} value={value} setValue={setValue} lang={lang} theme={theme} setTheme={setTheme} block={block} setBlock={setBlock}/>
     </div>
     </>
     );
