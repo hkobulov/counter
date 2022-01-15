@@ -5,7 +5,7 @@ import langData from '../../Localization/data';
 function Zikr({modal, setModal, lang, theme}) {
     return (
         <>
-            <div className={`area ${modal ? 'modal--open' : null}`}>
+            <div className={`area ${modal ? 'modal--open' : null}`} onClick={(evt) => evt.target.matches('.area') && setModal(false)}>
                 <div className={`area--inner ${theme ? 'area--inner--dark' : null}`}>
                     <button className="area--inner__btn" onClick={() => setModal(false)}>X</button>
                     
