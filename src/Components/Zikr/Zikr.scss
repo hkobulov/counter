@@ -16,6 +16,10 @@
     padding: 20px;
     border-radius: 7px;
     background-color: #fff;
+
+    &--dark {
+        background-color: rgb(31, 31, 31);
+    }
 }
 
 .modal--open.area {
@@ -47,9 +51,19 @@
 .zikr-list__item-one {
     color: brown;
     font-size: 18px;
+
+    &--dark{
+        color: rgb(248, 144, 144);
+        font-weight: 300;
+    }
 }
 
 .zikr-list__item-two {
     color: cadetblue;
     font-size: 18px;
+
+    &--dark{
+        color: rgb(175, 250, 255);
+        font-weight: 300;
+    }
 }

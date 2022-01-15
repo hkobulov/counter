@@ -10,12 +10,29 @@ body {
   font-weight: 400;
 }
 
+.main-area {
+  position: relative;
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-heading {
   margin: 0;
-  margin-bottom: 25px;
+  margin-right: 0 auto;
   font-size: 36px;
   color: #800000;
   text-align: center;
+}
+
+.select-lang {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .tasbih-design {
